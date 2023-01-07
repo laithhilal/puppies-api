@@ -3,6 +3,7 @@ import express from 'express';
 import { IPuppy } from 'Interface';
 
 const app: Application = express();
+app.use(express.json())
 
 const puppies: IPuppy[] = [
   { id: 1, name: 'Buddy', breed: 'Labrador', birthdate: new Date('2018-01-01') },
